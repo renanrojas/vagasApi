@@ -1,0 +1,36 @@
+<table class="content-table">
+    <thead>
+        <tr>
+            <td>Ação</td>
+            <td>ID</td>
+            <td>Nome</td>
+            <td>E-mail</td>
+        </tr>
+    </thead>
+    {{#data}}
+
+    <tbody>
+        <tr>
+            <td>
+                <a href='update/{{id}}'><img src="/img/Edite.png"></a>
+                <a href='deletar/{{id}}' class = 'deletar'><img src='/img/Lixeira.png'></a>
+            </td>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{email}}</td>
+            
+        </tr>
+    </tbody>
+
+    {{/data}}
+</table>
+<div class="container">
+        <div class="row text-center">
+            <div id="menu">
+                <ul>
+                    <li><a href='/'>Retornar</a> </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
